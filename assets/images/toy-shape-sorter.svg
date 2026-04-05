@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="woodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D9A05B"/>
+      <stop offset="100%" style="stop-color:#B8763A"/>
+    </linearGradient>
+    <linearGradient id="topGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8B570"/>
+      <stop offset="100%" style="stop-color:#C98840"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="3" dy="6" stdDeviation="6" flood-color="#00000030"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="500" height="500" fill="#FFF8EE"/>
+  <!-- Box body -->
+  <rect x="80" y="230" width="340" height="180" rx="14" fill="url(#woodGrad)" filter="url(#shadow)"/>
+  <!-- Box front shading -->
+  <rect x="90" y="240" width="320" height="160" rx="10" fill="#C98840" opacity="0.3"/>
+  <!-- Box top -->
+  <rect x="70" y="210" width="360" height="36" rx="10" fill="url(#topGrad)" filter="url(#shadow)"/>
+  <!-- Wood grain lines -->
+  <line x1="90" y1="240" x2="90" y2="400" stroke="#B87030" stroke-width="1.5" opacity="0.4"/>
+  <line x1="140" y1="240" x2="140" y2="400" stroke="#B87030" stroke-width="1.5" opacity="0.4"/>
+  <line x1="200" y1="240" x2="200" y2="400" stroke="#B87030" stroke-width="1.5" opacity="0.4"/>
+  <line x1="270" y1="240" x2="270" y2="400" stroke="#B87030" stroke-width="1.5" opacity="0.4"/>
+  <line x1="340" y1="240" x2="340" y2="400" stroke="#B87030" stroke-width="1.5" opacity="0.4"/>
+  <line x1="400" y1="240" x2="400" y2="400" stroke="#B87030" stroke-width="1.5" opacity="0.4"/>
+  <!-- Holes on top -->
+  <circle cx="175" cy="228" r="22" fill="#A06428" opacity="0.7"/>
+  <rect x="218" y="206" width="44" height="44" rx="4" fill="#A06428" opacity="0.7"/>
+  <polygon points="325,206 355,250 295,250" fill="#A06428" opacity="0.7"/>
+  <!-- Shape pieces floating -->
+  <!-- Circle piece (red) -->
+  <circle cx="175" cy="160" r="34" fill="#E05555" filter="url(#shadow)"/>
+  <circle cx="175" cy="160" r="26" fill="#F07070" opacity="0.5"/>
+  <!-- Square piece (blue) -->
+  <rect x="218" y="126" width="44" height="44" rx="5" fill="#4A90D9" filter="url(#shadow)"/>
+  <rect x="225" y="133" width="30" height="30" rx="3" fill="#6AAAF0" opacity="0.5"/>
+  <!-- Triangle piece (yellow) -->
+  <polygon points="325,118 360,172 290,172" fill="#F5C518" filter="url(#shadow)"/>
+  <polygon points="325,130 348,168 302,168" fill="#FFDD50" opacity="0.5"/>
+  <!-- Star piece (green) -->
+  <polygon points="130,320 137,342 160,342 142,355 149,377 130,364 111,377 118,355 100,342 123,342" fill="#4CAF50" filter="url(#shadow)"/>
+  <!-- Heart piece (purple) -->
+  <path d="M360,320 C360,310 350,305 345,310 C340,305 330,310 330,320 C330,330 345,345 345,345 C345,345 360,330 360,320Z" fill="#9B59B6" filter="url(#shadow)"/>
+  <!-- Diamond piece (orange) -->
+  <polygon points="240,310 258,335 240,360 222,335" fill="#FF8C42" filter="url(#shadow)"/>
+</svg>

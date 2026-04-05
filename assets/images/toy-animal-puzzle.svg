@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <filter id="shadow"><feDropShadow dx="2" dy="5" stdDeviation="5" flood-color="#00000025"/></filter>
+    <linearGradient id="woodBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5E6D0"/>
+      <stop offset="100%" style="stop-color:#E8D0B0"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="#F0FAF0"/>
+  <!-- Puzzle tray -->
+  <rect x="50" y="320" width="400" height="130" rx="14" fill="#C8914A" filter="url(#shadow)"/>
+  <rect x="60" y="330" width="380" height="110" rx="10" fill="#D9A05A"/>
+  <!-- Cow animal piece -->
+  <g filter="url(#shadow)" transform="translate(75,140)">
+    <ellipse cx="0" cy="20" rx="38" ry="30" fill="#F0F0F0"/>
+    <ellipse cx="0" cy="-5" rx="25" ry="22" fill="#F0F0F0"/>
+    <ellipse cx="-12" cy="-20" rx="7" ry="11" fill="#F0F0F0"/>
+    <ellipse cx="12" cy="-20" rx="7" ry="11" fill="#F0F0F0"/>
+    <circle cx="-8" cy="-2" r="4" fill="#222"/>
+    <circle cx="8" cy="-2" r="4" fill="#222"/>
+    <ellipse cx="0" cy="8" rx="10" ry="7" fill="#FFB5B5"/>
+    <circle cx="-20" cy="15" r="5" fill="#777"/>
+    <circle cx="20" cy="15" r="5" fill="#777"/>
+    <circle cx="0" cy="0" r="44" fill="none" stroke="#C8914A" stroke-width="3" stroke-dasharray="5,3" opacity="0.6"/>
+  </g>
+  <!-- Pig animal piece -->
+  <g filter="url(#shadow)" transform="translate(185,145)">
+    <circle cx="0" cy="15" r="35" fill="#FFB5C0"/>
+    <circle cx="0" cy="-12" r="22" fill="#FFB5C0"/>
+    <ellipse cx="-14" cy="-26" rx="8" ry="12" fill="#FFB5C0"/>
+    <ellipse cx="14" cy="-26" rx="8" ry="12" fill="#FFB5C0"/>
+    <circle cx="-7" cy="-8" r="4" fill="#333"/>
+    <circle cx="7" cy="-8" r="4" fill="#333"/>
+    <ellipse cx="0" cy="-1" rx="10" ry="7" fill="#FF9090"/>
+    <circle cx="-3" cy="-1" r="2.5" fill="#333"/>
+    <circle cx="3" cy="-1" r="2.5" fill="#333"/>
+    <circle cx="0" cy="0" r="44" fill="none" stroke="#C8914A" stroke-width="3" stroke-dasharray="5,3" opacity="0.6"/>
+  </g>
+  <!-- Duck animal piece -->
+  <g filter="url(#shadow)" transform="translate(300,150)">
+    <ellipse cx="0" cy="20" rx="30" ry="24" fill="#FFD700"/>
+    <circle cx="0" cy="-2" r="20" fill="#FFD700"/>
+    <ellipse cx="18" cy="0" rx="14" ry="8" fill="#FFA500"/>
+    <circle cx="-7" cy="-8" r="4" fill="#222"/>
+    <circle cx="-10" cy="8" rx="18" ry="12" fill="#FFE040" rx="18" ry="12"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#C8914A" stroke-width="3" stroke-dasharray="5,3" opacity="0.6"/>
+  </g>
+  <!-- Horse animal piece -->
+  <g filter="url(#shadow)" transform="translate(405,145)">
+    <ellipse cx="0" cy="16" rx="36" ry="28" fill="#C8A878"/>
+    <ellipse cx="5" cy="-8" rx="20" ry="24" fill="#C8A878"/>
+    <ellipse cx="8" cy="-26" rx="6" ry="13" fill="#C8A878"/>
+    <circle cx="-4" cy="-4" r="4" fill="#222"/>
+    <ellipse cx="15" cy="-14" rx="5" ry="3" fill="#A07850"/>
+    <circle cx="0" cy="0" r="44" fill="none" stroke="#C8914A" stroke-width="3" stroke-dasharray="5,3" opacity="0.6"/>
+  </g>
+  <!-- Knobs on each piece -->
+  <circle cx="75" cy="115" r="10" fill="#B07030" filter="url(#shadow)"/>
+  <circle cx="185" cy="115" r="10" fill="#B07030" filter="url(#shadow)"/>
+  <circle cx="300" cy="115" r="10" fill="#B07030" filter="url(#shadow)"/>
+  <circle cx="405" cy="115" r="10" fill="#B07030" filter="url(#shadow)"/>
+  <!-- Sheep piece in tray area -->
+  <ellipse cx="130" cy="375" rx="38" ry="28" fill="#E8E8E8" filter="url(#shadow)"/>
+  <circle cx="130" cy="350" r="20" fill="#E8E8E8"/>
+  <circle cx="106" cy="362" r="12" fill="#E8E8E8"/>
+  <circle cx="154" cy="362" r="12" fill="#E8E8E8"/>
+  <circle cx="123" cy="352" r="3" fill="#333"/>
+  <circle cx="137" cy="352" r="3" fill="#333"/>
+  <!-- Chicken piece in tray -->
+  <ellipse cx="300" cy="378" rx="32" ry="24" fill="#FFD17A" filter="url(#shadow)"/>
+  <circle cx="300" cy="356" r="18" fill="#FFD17A"/>
+  <polygon points="300,350 316,360 284,360" fill="#FF8C42"/>
+  <circle cx="294" cy="354" r="3" fill="#333"/>
+</svg>

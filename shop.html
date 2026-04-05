@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Educational Wooden Toys | ToyWorld</title>
+  <meta name="description" content="Browse our curated collection of educational wooden toys. Filter by age, category, skill type, and price. Free shipping on orders over $50.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/rtl.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body class="has-header">
+  <!-- Header -->
+  <header class="header"><div class="header-inner"><a href="index.html" class="header-logo"><img src="assets/images/logo.png" alt="ToyWorld Logo"><span>ToyWorld</span></a><nav class="nav-desktop"><a href="index.html" class="nav-link">Home</a><a href="home2.html" class="nav-link">Home 2</a><a href="shop.html" class="nav-link active">Shop</a><a href="categories.html" class="nav-link">Categories</a><a href="about.html" class="nav-link">About</a><a href="contact.html" class="nav-link">Contact</a><a href="signup.html" class="nav-link">Sign Up</a><a href="dashboard.html" class="nav-link">Dashboard</a></nav><div class="header-actions"><div class="header-cta"><a href="shop.html" class="btn btn-primary btn-sm">Shop Now</a><a href="signup.html" class="btn btn-secondary btn-sm">Sign Up</a></div><button class="theme-toggle" title="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><button class="rtl-toggle" title="Toggle RTL"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="17" y1="10" x2="3" y2="10"/><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="14" x2="3" y2="14"/><line x1="17" y1="18" x2="3" y2="18"/></svg></button><a href="cart.html" class="cart-btn" title="Cart"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-count" style="display:none">0</span></a><button class="nav-mobile-toggle" aria-label="Toggle menu"><div class="hamburger"><span></span><span></span><span></span></div></button></div></div></header>
+  <nav class="nav-mobile"><a href="index.html" class="nav-link">Home</a><a href="home2.html" class="nav-link">Home 2</a><a href="shop.html" class="nav-link active">Shop</a><a href="categories.html" class="nav-link">Categories</a><a href="about.html" class="nav-link">About</a><a href="contact.html" class="nav-link">Contact</a><a href="signup.html" class="nav-link">Sign Up</a><a href="dashboard.html" class="nav-link">Dashboard</a><a href="shop.html" class="btn btn-primary">Shop Now</a></nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section-badge">🛍️ Our Collection</span>
+      <h1>Shop All Toys</h1>
+      <p>Explore our complete range of educational wooden toys, handcrafted for curious little minds.</p>
+    </div>
+  </section>
+
+  <!-- Shop Layout -->
+  <section class="section">
+    <div class="container">
+      <div class="shop-layout">
+        <!-- Sidebar Filters -->
+        <aside class="shop-sidebar" id="shop-sidebar">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: var(--space-4);">
+            <h4 style="display:flex;align-items:center;gap:8px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+              Filters
+            </h4>
+            <button class="btn btn-sm" style="display:none;" onclick="document.getElementById('shop-sidebar').classList.remove('active')">✕ Close</button>
+          </div>
+
+          <div class="filter-group">
+            <h5>Age Group</h5>
+            <label class="filter-option"><input type="checkbox" data-filter="age" value="0-2"> 0–2 Years</label>
+            <label class="filter-option"><input type="checkbox" data-filter="age" value="3-5"> 3–5 Years</label>
+            <label class="filter-option"><input type="checkbox" data-filter="age" value="6-10"> 6–10 Years</label>
+          </div>
+
+          <div class="filter-group">
+            <h5>Category</h5>
+            <label class="filter-option"><input type="checkbox" data-filter="category" value="puzzles"> Puzzles & Brain Games</label>
+            <label class="filter-option"><input type="checkbox" data-filter="category" value="montessori"> Montessori Toys</label>
+            <label class="filter-option"><input type="checkbox" data-filter="category" value="wooden"> Wooden Toys</label>
+          </div>
+
+          <div class="filter-group">
+            <h5>Skill Type</h5>
+            <label class="filter-option"><input type="checkbox" data-filter="skill" value="cognitive"> Cognitive</label>
+            <label class="filter-option"><input type="checkbox" data-filter="skill" value="motor"> Motor Skills</label>
+            <label class="filter-option"><input type="checkbox" data-filter="skill" value="creative"> Creative</label>
+          </div>
+        </aside>
+
+        <!-- Products -->
+        <div>
+          <div class="shop-toolbar">
+            <span class="result-count">Showing 12 products</span>
+            <div style="display:flex; gap: var(--space-3); align-items: center;">
+              <button class="mobile-filter-btn" onclick="document.getElementById('shop-sidebar').classList.add('active')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+                Filters
+              </button>
+              <select id="shop-sort">
+                <option value="popular">Most Popular</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Highest Rated</option>
+                <option value="newest">Newest First</option>
+              </select>
+            </div>
+          </div>
+          <div class="products-grid" id="products-grid">
+            <!-- Products rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="index.html" class="header-logo"><img src="assets/images/logo.png" alt="ToyWorld" style="width:36px;height:36px;"><span>ToyWorld</span></a><p>Premium educational & wooden toys crafted with love for curious minds.</p></div><div><h5>Quick Links</h5><ul class="footer-links"><li><a href="shop.html">Shop All</a></li><li><a href="categories.html">Categories</a></li><li><a href="about.html">Our Story</a></li><li><a href="contact.html">Contact Us</a></li></ul></div><div><h5>Categories</h5><ul class="footer-links"><li><a href="categories.html">0–2 Years</a></li><li><a href="categories.html">3–5 Years</a></li><li><a href="categories.html">6–10 Years</a></li><li><a href="categories.html">Montessori</a></li></ul></div><div><h5>Support</h5><ul class="footer-links"><li><a href="contact.html">Help Center</a></li><li><a href="#">Shipping Info</a></li><li><a href="#">Returns</a></li><li><a href="#">Privacy Policy</a></li></ul></div></div><div class="footer-bottom"><span>© 2026 ToyWorld. All rights reserved.</span><span>Made with ❤️ for curious little minds</span></div></div></footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>

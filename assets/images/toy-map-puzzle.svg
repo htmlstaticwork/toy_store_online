@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <filter id="sh"><feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#00000025"/></filter>
+    <linearGradient id="woodFrame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4A56A"/>
+      <stop offset="100%" style="stop-color:#A87040"/>
+    </linearGradient>
+    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B8DEFA"/>
+      <stop offset="100%" style="stop-color:#8AC8F0"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="#F0F8FF"/>
+  <!-- Wooden puzzle border frame -->
+  <rect x="40" y="80" width="420" height="320" rx="12" fill="url(#woodFrame)" filter="url(sh)"/>
+  <!-- Ocean background -->
+  <rect x="55" y="95" width="390" height="290" rx="8" fill="url(#oceanGrad)"/>
+  <!-- North America -->
+  <polygon points="80,120 170,110 200,145 185,185 160,200 120,190 85,165 70,145" fill="#4A90D9" filter="url(sh)"/>
+  <text x="130" y="160" font-family="Arial" font-size="10" fill="white" font-weight="bold" text-anchor="middle">N. AMERICA</text>
+  <!-- South America -->
+  <polygon points="140,215 185,208 195,240 185,290 160,318 130,305 115,270 120,240" fill="#F5C518" filter="url(sh)"/>
+  <text x="158" y="263" font-family="Arial" font-size="9" fill="#333" font-weight="bold" text-anchor="middle">S. AMERICA</text>
+  <!-- Europe -->
+  <polygon points="215,105 265,100 280,130 270,158 245,165 218,150 205,130" fill="#5CB85C" filter="url(sh)"/>
+  <text x="243" y="135" font-family="Arial" font-size="9" fill="white" font-weight="bold" text-anchor="middle">EUROPE</text>
+  <!-- Africa -->
+  <polygon points="218,175 268,168 290,195 285,255 260,290 230,285 208,255 205,215" fill="#FF8C42" filter="url(sh)"/>
+  <text x="248" y="232" font-family="Arial" font-size="9" fill="white" font-weight="bold" text-anchor="middle">AFRICA</text>
+  <!-- Asia -->
+  <polygon points="280,105 390,95 420,130 415,175 380,195 330,185 295,165 275,145 280,120" fill="#E05555" filter="url(sh)"/>
+  <text x="355" y="148" font-family="Arial" font-size="9" fill="white" font-weight="bold" text-anchor="middle">ASIA</text>
+  <!-- Australia -->
+  <polygon points="350,230 415,225 425,260 405,295 365,300 335,275 335,248" fill="#9B59B6" filter="url(sh)"/>
+  <text x="382" y="262" font-family="Arial" font-size="9" fill="white" font-weight="bold" text-anchor="middle">AUSTRALIA</text>
+  <!-- Antarctica hint -->
+  <ellipse cx="280" cy="350" rx="100" ry="22" fill="white" opacity="0.7" filter="url(sh)"/>
+  <text x="280" y="354" font-family="Arial" font-size="8" fill="#555" text-anchor="middle">ANTARCTICA</text>
+  <!-- Puzzle piece cut lines -->
+  <line x1="200" y1="95" x2="200" y2="385" stroke="#A07030" stroke-width="1.5" opacity="0.5" stroke-dasharray="4,3"/>
+  <line x1="300" y1="95" x2="300" y2="385" stroke="#A07030" stroke-width="1.5" opacity="0.5" stroke-dasharray="4,3"/>
+  <line x1="55" y1="200" x2="445" y2="200" stroke="#A07030" stroke-width="1.5" opacity="0.5" stroke-dasharray="4,3"/>
+  <!-- Stars/markers on continents -->
+  <circle cx="130" cy="145" r="5" fill="white" opacity="0.8"/>
+  <circle cx="248" cy="218" r="5" fill="white" opacity="0.8"/>
+  <circle cx="350" cy="140" r="5" fill="white" opacity="0.8"/>
+  <!-- Bottom handle/knob area -->
+  <rect x="40" y="390" width="420" height="75" rx="12" fill="url(#woodFrame)" filter="url(sh)"/>
+  <rect x="55" y="400" width="50" height="50" rx="8" fill="#C8914A" opacity="0.5"/>
+  <rect x="115" y="400" width="270" height="50" rx="8" fill="#C8914A" opacity="0.3"/>
+  <rect x="395" y="400" width="50" height="50" rx="8" fill="#C8914A" opacity="0.5"/>
+  <!-- Number label -->
+  <text x="250" y="430" font-family="Arial" font-size="13" fill="#7A4A20" text-anchor="middle" font-weight="bold">100-Piece World Map Puzzle</text>
+</svg>

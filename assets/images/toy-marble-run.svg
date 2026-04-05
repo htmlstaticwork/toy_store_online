@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <filter id="sh"><feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#00000030"/></filter>
+    <linearGradient id="ramp1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E05555"/>
+      <stop offset="100%" style="stop-color:#C03030"/>
+    </linearGradient>
+    <linearGradient id="ramp2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4A90D9"/>
+      <stop offset="100%" style="stop-color:#2A70B9"/>
+    </linearGradient>
+    <linearGradient id="ramp3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5CB85C"/>
+      <stop offset="100%" style="stop-color:#3C9A3C"/>
+    </linearGradient>
+    <linearGradient id="ramp4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5C518"/>
+      <stop offset="100%" style="stop-color:#D9A000"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="#FFF5E8"/>
+  <!-- Vertical frame poles -->
+  <rect x="100" y="60" width="18" height="380" rx="9" fill="#B8763A" filter="url(sh)"/>
+  <rect x="382" y="60" width="18" height="380" rx="9" fill="#B8763A" filter="url(sh)"/>
+  <!-- Horizontal cross bars -->
+  <rect x="100" y="60" width="300" height="16" rx="8" fill="#C8914A" filter="url(sh)"/>
+  <rect x="100" y="420" width="300" height="20" rx="10" fill="#C8914A" filter="url(sh)"/>
+  <!-- Ramp 1 (red) - top -->
+  <rect x="118" y="130" width="230" height="22" rx="8" fill="url(#ramp1)" filter="url(sh)" transform="rotate(-10,118,130)"/>
+  <!-- Funnel -->
+  <polygon points="200,150 260,150 245,185 215,185" fill="#9B59B6" filter="url(sh)"/>
+  <!-- Ramp 2 (blue) -->
+  <rect x="152" y="210" width="220" height="22" rx="8" fill="url(#ramp2)" filter="url(sh)" transform="rotate(10,152,210)"/>
+  <!-- Bridge -->
+  <path d="M 130 265 Q 200 245 270 265" stroke="#FF8C42" stroke-width="16" fill="none" stroke-linecap="round" filter="url(sh)"/>
+  <!-- Ramp 3 (green) -->
+  <rect x="118" y="295" width="220" height="22" rx="8" fill="url(#ramp3)" filter="url(sh)" transform="rotate(-8,118,295)"/>
+  <!-- Ramp 4 (yellow) -->
+  <rect x="152" y="355" width="220" height="22" rx="8" fill="url(#ramp4)" filter="url(sh)" transform="rotate(8,152,355)"/>
+  <!-- Marbles -->
+  <circle cx="168" cy="118" r="12" fill="#E8F0FF" stroke="#4A90D9" stroke-width="2" filter="url(sh)"/>
+  <circle cx="165" cy="115" r="4" fill="white" opacity="0.7"/>
+  <circle cx="240" cy="200" r="12" fill="#FFE0E0" stroke="#E05555" stroke-width="2" filter="url(sh)"/>
+  <circle cx="237" cy="197" r="4" fill="white" opacity="0.7"/>
+  <circle cx="300" cy="285" r="12" fill="#E0FFE0" stroke="#5CB85C" stroke-width="2" filter="url(sh)"/>
+  <circle cx="297" cy="282" r="4" fill="white" opacity="0.7"/>
+  <circle cx="200" cy="350" r="12" fill="#FFF8D0" stroke="#F5C518" stroke-width="2" filter="url(sh)"/>
+  <circle cx="197" cy="347" r="4" fill="white" opacity="0.7"/>
+  <!-- Base collection bowl -->
+  <ellipse cx="250" cy="440" rx="90" ry="25" fill="#C8914A" filter="url(sh)"/>
+  <ellipse cx="250" cy="430" rx="80" ry="18" fill="#D9A05A"/>
+  <!-- Marbles in bowl -->
+  <circle cx="215" cy="430" r="8" fill="#E8F0FF" stroke="#4A90D9" stroke-width="1.5"/>
+  <circle cx="240" cy="432" r="8" fill="#FFE0E0" stroke="#E05555" stroke-width="1.5"/>
+  <circle cx="265" cy="430" r="8" fill="#E0FFE0" stroke="#5CB85C" stroke-width="1.5"/>
+  <circle cx="288" cy="432" r="8" fill="#FFF8D0" stroke="#F5C518" stroke-width="1.5"/>
+</svg>

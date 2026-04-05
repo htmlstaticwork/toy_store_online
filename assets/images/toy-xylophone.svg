@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <filter id="sh"><feDropShadow dx="2" dy="5" stdDeviation="5" flood-color="#00000030"/></filter>
+    <linearGradient id="woodFrame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4956A"/>
+      <stop offset="100%" style="stop-color:#B8703A"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="#FFF0F5"/>
+  <!-- Xylophone body frame (wood) -->
+  <rect x="60" y="280" width="380" height="140" rx="14" fill="url(#woodFrame)" filter="url(sh)"/>
+  <line x1="75" y1="295" x2="75" y2="405" stroke="#C07840" stroke-width="2" opacity="0.5"/>
+  <line x1="120" y1="295" x2="120" y2="405" stroke="#C07840" stroke-width="2" opacity="0.5"/>
+  <line x1="160" y1="295" x2="160" y2="405" stroke="#C07840" stroke-width="2" opacity="0.5"/>
+  <!-- Bars (keys) -->
+  <!-- Bar 1 - Red (C) -->
+  <rect x="78" y="240" width="46" height="130" rx="8" fill="#E05555" filter="url(sh)"/>
+  <rect x="84" y="246" width="34" height="20" rx="4" fill="#F07070" opacity="0.5"/>
+  <circle cx="101" cy="355" r="8" fill="#C03030"/>
+  <!-- Bar 2 - Orange (D) -->
+  <rect x="132" y="248" width="46" height="122" rx="8" fill="#FF8C42" filter="url(sh)"/>
+  <rect x="138" y="254" width="34" height="20" rx="4" fill="#FFA060" opacity="0.5"/>
+  <circle cx="155" cy="355" r="8" fill="#E06020"/>
+  <!-- Bar 3 - Yellow (E) -->
+  <rect x="186" y="258" width="46" height="112" rx="8" fill="#F5C518" filter="url(sh)"/>
+  <rect x="192" y="264" width="34" height="20" rx="4" fill="#FFD740" opacity="0.5"/>
+  <circle cx="209" cy="355" r="8" fill="#D9A000"/>
+  <!-- Bar 4 - Green (F) -->
+  <rect x="240" y="252" width="46" height="118" rx="8" fill="#5CB85C" filter="url(sh)"/>
+  <rect x="246" y="258" width="34" height="20" rx="4" fill="#70D070" opacity="0.5"/>
+  <circle cx="263" cy="355" r="8" fill="#3C9A3C"/>
+  <!-- Bar 5 - Cyan (G) -->
+  <rect x="294" y="244" width="46" height="126" rx="8" fill="#17B8D0" filter="url(sh)"/>
+  <rect x="300" y="250" width="34" height="20" rx="4" fill="#40D0E8" opacity="0.5"/>
+  <circle cx="317" cy="355" r="8" fill="#0090A8"/>
+  <!-- Bar 6 - Blue (A) -->
+  <rect x="348" y="236" width="46" height="134" rx="8" fill="#4A90D9" filter="url(sh)"/>
+  <rect x="354" y="242" width="34" height="20" rx="4" fill="#60AAFF" opacity="0.5"/>
+  <circle cx="371" cy="355" r="8" fill="#2A70B9"/>
+  <!-- Bar 7 - Indigo (B) -->
+  <rect x="394" y="226" width="46" height="144" rx="8" fill="#7B5EA8" filter="url(sh)"/>
+  <rect x="400" y="232" width="34" height="20" rx="4" fill="#9A78D0" opacity="0.5"/>
+  <circle cx="417" cy="355" r="8" fill="#5A3E88"/>
+  <!-- Mallets -->
+  <line x1="155" y1="180" x2="115" y2="250" stroke="#B8763A" stroke-width="10" stroke-linecap="round" filter="url(sh)"/>
+  <circle cx="155" cy="170" r="20" fill="#E05555" filter="url(sh)"/>
+  <circle cx="321" cy="170" r="20" fill="#4A90D9" filter="url(sh)"/>
+  <line x1="321" y1="180" x2="355" y2="245" stroke="#B8763A" stroke-width="10" stroke-linecap="round" filter="url(sh)"/>
+  <!-- Musical notes -->
+  <text x="195" y="120" font-size="36" fill="#E05555" opacity="0.7" font-family="Arial">♪</text>
+  <text x="270" y="100" font-size="28" fill="#4A90D9" opacity="0.7" font-family="Arial">♫</text>
+  <text x="350" y="115" font-size="32" fill="#5CB85C" opacity="0.7" font-family="Arial">♩</text>
+</svg>

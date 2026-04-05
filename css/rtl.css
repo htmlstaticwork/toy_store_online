@@ -1,0 +1,105 @@
+/* ================================================
+   🧸 ToyWorld — RTL Overrides
+   ================================================ */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Flip margins and paddings */
+[dir="rtl"] .hero-stats {
+  direction: rtl;
+}
+
+/* Flip float and alignment */
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+/* Navigation */
+[dir="rtl"] .nav-mobile {
+  transform: translateX(100%);
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .nav-mobile.active {
+  transform: translateX(0);
+}
+
+/* Flip icon positions */
+[dir="rtl"] .accordion-header {
+  text-align: right;
+}
+
+/* Footer */
+[dir="rtl"] .footer-bottom {
+  direction: rtl;
+}
+
+/* Shop sidebar mobile */
+[dir="rtl"] .shop-sidebar {
+  left: auto;
+  right: 0;
+}
+
+/* Pricing features */
+[dir="rtl"] .pricing-features {
+  text-align: right;
+}
+
+/* General spacing flips */
+[dir="rtl"] .ml-auto {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .mr-auto {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+/* Breadcrumb separator */
+[dir="rtl"] .breadcrumb .separator svg {
+  transform: rotate(180deg);
+}
+
+/* Cart item layout */
+[dir="rtl"] .cart-item {
+  direction: rtl;
+}
+
+/* Dashboard sidebar */
+[dir="rtl"] .dashboard-sidebar {
+  left: auto;
+  right: 0;
+  border-right: none;
+  border-left: 1px solid var(--border-color);
+}
+
+[dir="rtl"] .dashboard-main {
+  margin-left: 0;
+  margin-right: 280px;
+}
+
+@media (max-width: 1024px) {
+  [dir="rtl"] .dashboard-sidebar {
+    transform: translateX(100%);
+  }
+  [dir="rtl"] .dashboard-sidebar.active {
+    transform: translateX(0);
+  }
+  [dir="rtl"] .dashboard-main {
+    margin-right: 0;
+  }
+}
+
+/* Flip chevrons */
+[dir="rtl"] .chevron-right {
+  transform: rotate(180deg);
+}

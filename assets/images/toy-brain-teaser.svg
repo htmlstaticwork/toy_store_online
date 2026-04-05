@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <filter id="sh"><feDropShadow dx="3" dy="6" stdDeviation="6" flood-color="#00000030"/></filter>
+    <linearGradient id="wood1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4A56A"/>
+      <stop offset="100%" style="stop-color:#A87040"/>
+    </linearGradient>
+    <linearGradient id="wood2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C08850"/>
+      <stop offset="100%" style="stop-color:#906030"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="#FBF5EE"/>
+  <!-- Main box body -->
+  <rect x="100" y="160" width="300" height="240" rx="14" fill="url(#wood1)" filter="url(sh)"/>
+  <!-- Wood grain texture -->
+  <line x1="115" y1="175" x2="115" y2="385" stroke="#B07830" stroke-width="1.5" opacity="0.35"/>
+  <line x1="145" y1="175" x2="145" y2="385" stroke="#B07830" stroke-width="1.5" opacity="0.35"/>
+  <line x1="200" y1="175" x2="200" y2="385" stroke="#B07830" stroke-width="1.5" opacity="0.35"/>
+  <line x1="270" y1="175" x2="270" y2="385" stroke="#B07830" stroke-width="1.5" opacity="0.35"/>
+  <line x1="340" y1="175" x2="340" y2="385" stroke="#B07830" stroke-width="1.5" opacity="0.35"/>
+  <line x1="380" y1="175" x2="380" y2="385" stroke="#B07830" stroke-width="1.5" opacity="0.35"/>
+  <!-- Box lid (slightly open) -->
+  <rect x="95" y="145" width="310" height="30" rx="10" fill="url(#wood2)" filter="url(sh)" transform="rotate(-5,95,160)"/>
+  <!-- Decorative carved pattern on front -->
+  <rect x="130" y="200" width="240" height="160" rx="8" fill="#B87030" opacity="0.2"/>
+  <!-- Sliding puzzle panel row 1 -->
+  <rect x="138" y="210" width="65" height="55" rx="6" fill="#8B5E3C" opacity="0.7"/>
+  <rect x="213" y="210" width="65" height="55" rx="6" fill="#8B5E3C" opacity="0.5"/>
+  <rect x="288" y="210" width="65" height="55" rx="6" fill="#8B5E3C" opacity="0.3"/>
+  <!-- Sliding panel arrows -->
+  <text x="155" y="242" font-size="22" fill="#FFD700" font-family="Arial">▶</text>
+  <text x="222" y="242" font-size="22" fill="#FFD700" font-family="Arial" opacity="0.7">▶</text>
+  <!-- Row 2 panels -->
+  <rect x="138" y="275" width="65" height="55" rx="6" fill="#8B5E3C" opacity="0.3"/>
+  <rect x="213" y="275" width="65" height="55" rx="6" fill="#8B5E3C" opacity="0.7"/>
+  <rect x="288" y="275" width="65" height="55" rx="6" fill="#8B5E3C" opacity="0.5"/>
+  <!-- Hidden button circles -->
+  <circle cx="160" cy="300" r="8" fill="#C8914A"/>
+  <circle cx="160" cy="300" r="4" fill="#A06820"/>
+  <circle cx="310" cy="300" r="8" fill="#C8914A"/>  
+  <circle cx="310" cy="300" r="4" fill="#A06820"/>
+  <!-- Rotating ring element -->
+  <circle cx="250" cy="345" r="30" fill="none" stroke="#8B5E3C" stroke-width="8" opacity="0.6"/>
+  <circle cx="250" cy="345" r="18" fill="none" stroke="#C8914A" stroke-width="5" opacity="0.8"/>
+  <circle cx="250" cy="315" r="6" fill="#D4B870"/>
+  <!-- Decorative brass corners -->
+  <circle cx="110" cy="170" r="8" fill="#D4B840"/>
+  <circle cx="390" cy="170" r="8" fill="#D4B840"/>
+  <circle cx="110" cy="390" r="8" fill="#D4B840"/>
+  <circle cx="390" cy="390" r="8" fill="#D4B840"/>
+  <!-- Small keyhole -->
+  <circle cx="250" cy="175" r="8" fill="#8B5E3C"/>
+  <rect x="247" y="177" width="6" height="10" rx="2" fill="#8B5E3C"/>
+  <!-- Question mark to show mystery -->
+  <text x="215" y="460" font-size="30" fill="#8B5E3C" font-family="Arial" font-weight="bold" opacity="0.6">? ? ?</text>
+</svg>
