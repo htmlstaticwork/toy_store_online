@@ -204,6 +204,13 @@ const TestimonialCarousel = {
       dot.addEventListener('click', () => this.goTo(i));
     });
 
+    // Set explicit widths for track and slides
+    this.track.style.width = (this.total * 100) + '%';
+    this.track.querySelectorAll('.carousel-slide').forEach(slide => {
+      slide.style.width = (100 / this.total) + '%';
+      slide.style.flex = '0 0 ' + (100 / this.total) + '%';
+    });
+
     // Auto play every 3 seconds
     this.startAutoPlay();
 

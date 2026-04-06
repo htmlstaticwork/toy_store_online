@@ -396,12 +396,12 @@
 
 .carousel-track {
   display: flex !important;
+  flex-wrap: nowrap;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform;
 }
 
 .carousel-slide {
-  min-width: 100%;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
