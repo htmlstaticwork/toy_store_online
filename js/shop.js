@@ -401,17 +401,21 @@ const CartPage = {
 
     const cart = CartManager.getCart();
 
+    const layout = document.querySelector('.cart-layout');
     if (cart.length === 0) {
+      if (layout) layout.classList.add('cart-is-empty');
       container.innerHTML = `
-        <div style="text-align: center; padding: 60px 20px;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-tertiary); margin-bottom: 16px;"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-          <h4 style="margin-bottom: 8px;">Your cart is empty</h4>
-          <p style="font-size: 14px; color: var(--text-tertiary); margin-bottom: 20px;">Looks like you haven't added any toys yet!</p>
-          <a href="shop.html" class="btn btn-primary">Browse Toys</a>
+        <div style="text-align: center; padding: 100px 20px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-tertiary); margin-bottom: 24px;"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <h2 style="margin-bottom: 12px; font-size: 32px;">Your cart is empty</h2>
+          <p style="font-size: 18px; color: var(--text-tertiary); margin-bottom: 32px;">Looks like you haven't added any toys yet!</p>
+          <a href="shop.html" class="btn btn-primary btn-lg">Browse Toys</a>
         </div>`;
       if (summary) summary.style.display = 'none';
       return;
     }
+
+    if (layout) layout.classList.remove('cart-is-empty');
 
     container.innerHTML = cart.map(item => `
       <div class="cart-item" data-id="${item.id}">

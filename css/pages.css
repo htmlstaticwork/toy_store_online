@@ -1175,6 +1175,16 @@
   }
 }
 
+.cart-layout.cart-is-empty {
+  grid-template-columns: 1fr;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
 /* ---- Auth Pages ---- */
 .auth-page {
   min-height: 100vh;
