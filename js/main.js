@@ -228,7 +228,7 @@ const TestimonialCarousel = {
     if (this.current >= this.total) this.current = 0;
     if (this.current < 0) this.current = this.total - 1;
 
-    const offset = -(this.current * 100);
+    const offset = -(this.current * (100 / this.total));
     if (this.track) {
       this.track.style.transform = `translateX(${offset}%)`;
     }

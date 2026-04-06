@@ -125,6 +125,10 @@
   .hero-stats {
     justify-content: center;
   }
+  .hero {
+    padding-top: var(--space-12);
+    min-height: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -437,15 +441,13 @@
 
 @media (max-width: 1024px) {
   .carousel-slide {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-6);
+    padding: 0 var(--space-2);
   }
 }
 
 @media (max-width: 768px) {
   .carousel-slide {
-    grid-template-columns: 1fr;
-    gap: var(--space-4);
+    padding: 0 var(--space-1);
   }
 }
 

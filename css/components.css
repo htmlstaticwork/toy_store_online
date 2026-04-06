@@ -98,6 +98,10 @@
   backdrop-filter: blur(12px);
 }
 
+.has-header {
+  padding-top: var(--header-height);
+}
+
 [data-theme="dark"] .header {
   background: rgba(26, 26, 46, 0.95);
 }
@@ -325,6 +329,10 @@
 }
 
 .nav-mobile .btn {
+  width: 100%;
+}
+
+.nav-mobile .btn:first-of-type {
   margin-top: var(--space-4);
 }
 
