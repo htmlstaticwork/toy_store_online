@@ -194,25 +194,33 @@ const TestimonialCarousel = {
     if (!carousel) return;
 
     this.track = carousel.querySelector('.carousel-track');
-    this.cards = carousel.querySelectorAll('.testimonial-card');
-    this.prevBtn = carousel.querySelector('.carousel-prev');
-    this.nextBtn = carousel.querySelector('.carousel-next');
     this.dots = carousel.querySelectorAll('.carousel-dot');
     this.current = 0;
-    this.total = this.cards.length;
+    
+    // In grouped mode, total is the number of slides (direct children of track)
+    this.total = this.track.children.length;
 
-    if (this.prevBtn) this.prevBtn.addEventListener('click', () => this.prev());
-    if (this.nextBtn) this.nextBtn.addEventListener('click', () => this.next());
     this.dots.forEach((dot, i) => {
       dot.addEventListener('click', () => this.goTo(i));
     });
 
-    // Auto play
-    this.interval = setInterval(() => this.next(), 5000);
-    carousel.addEventListener('mouseenter', () => clearInterval(this.interval));
-    carousel.addEventListener('mouseleave', () => {
-      this.interval = setInterval(() => this.next(), 5000);
-    });
+    // Auto play every 3 seconds
+    this.startAutoPlay();
+
+    carousel.addEventListener('mouseenter', () => this.stopAutoPlay());
+    carousel.addEventListener('mouseleave', () => this.startAutoPlay());
+    
+    // Prevent transition issues on load
+    this.goTo(0);
+  },
+
+  startAutoPlay() {
+    this.stopAutoPlay();
+    this.interval = setInterval(() => this.next(), 3000);
+  },
+
+  stopAutoPlay() {
+    if (this.interval) clearInterval(this.interval);
   },
 
   goTo(index) {
@@ -290,6 +298,105 @@ const HeaderScroll = {
   }
 };
 
+// ---- Scroll To Top ----
+const ScrollToTop = {
+  init() {
+    this.injectStyles();
+    this.injectHTML();
+    this.btn = document.querySelector('.scroll-to-top');
+    if (!this.btn) return;
+
+    window.addEventListener('scroll', () => {
+      this.btn.classList.toggle('show', window.scrollY > 300);
+    });
+
+    this.btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  },
+
+  injectHTML() {
+    const btn = document.createElement('button');
+    btn.className = 'scroll-to-top';
+    btn.setAttribute('aria-label', 'Scroll to top');
+    btn.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    `;
+    document.body.appendChild(btn);
+  },
+
+  injectStyles() {
+    const style = document.createElement('style');
+    style.textContent = `
+      .scroll-to-top {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        width: 48px;
+        height: 48px;
+        border-radius: var(--radius-full);
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: var(--shadow-lg);
+        cursor: pointer;
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 2px solid rgba(255,255,255,0.1);
+      }
+      .scroll-to-top.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+      .scroll-to-top:hover {
+        background: linear-gradient(135deg, var(--primary-light), var(--primary));
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-xl);
+      }
+      .scroll-to-top:active {
+        transform: translateY(0) scale(0.95);
+      }
+      .scroll-to-top svg {
+        width: 24px;
+        height: 24px;
+        transition: transform 0.3s ease;
+      }
+      .scroll-to-top:hover svg {
+        transform: translateY(-2px);
+      }
+      
+      /* RTL Support */
+      [dir="rtl"] .scroll-to-top {
+        right: auto;
+        left: 24px;
+      }
+
+      /* Mobile Adjustment */
+      @media (max-width: 768px) {
+        .scroll-to-top {
+          bottom: 16px;
+          right: 16px;
+          width: 42px;
+          height: 42px;
+        }
+        [dir="rtl"] .scroll-to-top {
+          left: 16px;
+          right: auto;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+};
+
 // ---- Initialize Everything ----
 document.addEventListener('DOMContentLoaded', () => {
   ThemeManager.init();
@@ -300,4 +407,5 @@ document.addEventListener('DOMContentLoaded', () => {
   Accordion.init();
   ScrollAnimator.init();
   HeaderScroll.init();
+  ScrollToTop.init();
 });

@@ -905,7 +905,7 @@ textarea.form-input {
 
 .form-checkbox {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--space-2);
   font-size: var(--text-sm);
   cursor: pointer;
@@ -914,8 +914,10 @@ textarea.form-input {
 .form-checkbox input[type="checkbox"] {
   width: 18px;
   height: 18px;
+  margin-top: 1px;
   accent-color: var(--primary);
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 /* ---- Social Login Buttons ---- */
