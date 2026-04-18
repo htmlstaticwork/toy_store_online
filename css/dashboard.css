@@ -90,6 +90,12 @@
   border-top: 1px solid var(--border-color);
 }
 
+/* Hide Sidebar Toggles on Desktop */
+.sidebar-nav-actions .theme-toggle,
+.sidebar-nav-actions .rtl-toggle {
+  display: none;
+}
+
 /* ---- Dashboard Main ---- */
 .dashboard-main {
   flex: 1;
@@ -572,7 +578,7 @@
     background: var(--primary);
     color: var(--white);
     font-size: 10px;
-    font-weight: 700;
+    font-weight: 600;
     width: 18px;
     height: 18px;
     border-radius: 50%;
