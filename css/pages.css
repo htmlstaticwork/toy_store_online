@@ -49,7 +49,7 @@
 
 .hero-content h1 {
   font-size: var(--text-6xl);
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.1;
   margin-bottom: var(--space-6);
 }
@@ -95,7 +95,7 @@
 .hero-stat-number {
   font-family: var(--font-heading);
   font-size: var(--text-3xl);
-  font-weight: 800;
+  font-weight: 600;
   color: var(--primary);
 }
 
@@ -214,7 +214,7 @@
 
 .hero-premium-content h1 {
   font-size: var(--text-6xl);
-  font-weight: 800;
+  font-weight: 600;
   color: var(--white);
   margin-bottom: var(--space-6);
   text-shadow: 0 2px 12px rgba(0,0,0,0.3);
@@ -843,7 +843,7 @@
 
 .timeline-year {
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-weight: 600;
   color: var(--primary);
   font-size: var(--text-sm);
   margin-bottom: var(--space-2);
@@ -1042,7 +1042,7 @@
 
 .cart-item-price {
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-weight: 600;
   color: var(--primary);
   font-size: var(--text-lg);
   white-space: nowrap;
@@ -1095,7 +1095,7 @@
   margin-top: var(--space-4);
   padding-top: var(--space-5);
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-weight: 600;
   font-size: var(--text-lg);
   color: var(--text-primary);
 }
@@ -1237,7 +1237,7 @@
 
 .auth-logo span {
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-weight: 600;
   font-size: var(--text-xl);
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
@@ -1421,7 +1421,7 @@
   align-items: center;
   justify-content: center;
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-weight: 600;
   font-size: var(--text-sm);
 }
 
@@ -1440,6 +1440,26 @@
   color: var(--text-secondary);
   line-height: 1.7;
 }
+
+@media (max-width: 480px) {
+  .cta-banner {
+    padding: var(--space-12) var(--space-6);
+  }
+  .cta-banner h2 {
+    font-size: var(--text-2xl);
+  }
+  .cta-banner p {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-6);
+  }
+  .cta-banner .btn-lg {
+    padding: 12px 20px;
+    font-size: var(--text-base);
+    width: 100%;
+    white-space: normal;
+  }
+}
+
 @media (max-width: 480px) {
   .auth-card {
     padding: var(--space-8) var(--space-6);
