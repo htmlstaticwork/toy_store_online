@@ -491,6 +491,22 @@
   color: var(--white);
 }
 
+/* Responsive adjustment for Age Suggestions Grid at 1024px */
+@media (max-width: 1024px) {
+  #age-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-8);
+  }
+
+  #age-products .product-card {
+    width: calc(50% - var(--space-4));
+    min-width: 250px;
+    flex: 0 1 auto;
+  }
+}
+
 /* ---- Shop Page ---- */
 .shop-layout {
   display: grid;
